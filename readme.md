@@ -1,6 +1,3 @@
-# Plugin 101 Series
+# Plugin "google-review-ai"
 
-- Modular Administration area
-- CPT Manager
-- Custom Texonomy
-- Custom Template Sections
+AutoReviewMap is a WordPress plugin that integrates OpenAI with the Google Maps and Places APIs to automatically generate and suggest 4–5 star business reviews, helping improve local SEO and online reputation.
