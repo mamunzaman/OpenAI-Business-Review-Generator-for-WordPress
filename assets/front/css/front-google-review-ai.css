@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+textarea::placeholder {
+  font-size: 18px;
+}
+
+button.wp-element-button:disabled,
+button.wp-element-button[disabled]
+input#mm-review-ask-new-review:disabled,
+input#mm-review-ask-new-review[disabled]{
+  border: 1px solid #ffffff;
+  background-image: linear-gradient(180deg, #cccccc 0%, #cccccc 100%) !important;
+  background-color: #cccccc !important;
+  color: #000 !important;
+}
+
+button.wp-element-button:hover,
+input#mm-review-ask-new-review:hover{
+  cursor: auto;
+}
+
+.token-point-info{
+  font-size: 12px;
+}
+
+.token-point-info strong{
+  font-weight: 600;
+}
+
+.mm-ai-genaration-form-with-data input[type="button"].mm-review-generate-button-own{
+  background-color: #FFA300;
+  color: #007849;
+  background-image: linear-gradient(180deg, #FFA300 0%, #FFA300 100%);
+}
+
+.wp-element-button{
+  border-color: #FFA300 !important;
+}
+
+/*******
+LOADING
+ */
+#loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*border: 5px solid #f3f3f3;
+  border-top: 6px solid #9c41f2;
+  border-radius: 100%;*/
+  margin: auto;
+  /*visibility: hidden;*/
+  display: none;
+  /*animation: spin 1s infinite linear;*/
+  background: rgba(255, 255, 255, 0.50);
+  z-index: 100;
+}
+#loading.display {
+  /*visibility: visible;*/
+  display: block;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.loader {
+  margin: 0 0 2em;
+  height: 100%;
+  /* width: 100%; */
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  /* display: inline-block; */
+  vertical-align: middle;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect {
+  fill: #FF6700;
+}
+
+
+
+
+.mm-common-button-hide{
+  display: none;
+}
+
+.mm-common-button-hide.showButtonCopy{
+  display: block;
+  flex-grow: 0;
+  flex-basis: auto;
+}
+
+
+.mm-textarea-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#mm-google-review-form-container {
+  margin: auto;
+  padding: 25px 20px;
+  background: #fff;
+  box-shadow: 0px 0px 8px #d8d8d899;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.mm-ai-genaration-form-with-data{
+  position: relative;
+  z-index: 1;
+  /*display: flex;
+  flex-wrap: wrap;
+  justify-content:stretch;
+  gap: 10px;*/
+}
+
+#normal-review-butoon-container,
+.mm-ai-genaration-form-with-data{
+  text-align: center;
+}
+
+.mm-ai-genaration-form-with-data .wp-element-button,
+#normal-review-butoon-container .wp-element-button,
+#mm-googlemap-alert-with-info .wp-element-button{
+  margin-bottom: 10px;
+  float: none;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#mm-googlemap-alert-with-info p{
+  text-align: center;
+}
+
+
+
+#mm-google-review-form-container input.wp-element-button,
+#mm-googlemap-alert-with-info input.wp-element-button,
+.mm-ai-genaration-form-with-data button.wp-element-button{
+  background-color: #007849;
+  color: white;
+  white-space: inherit;
+}
+
+.mm-google-review-company-name {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+#popup-info-before-gotolink{
+  padding: 10px 0;
+}
+
+
+#popup-info-before-gotolink p{
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: left;
+  line-height: 1;
+}
+
+#popup-info-before-gotolink ol {
+  list-style: none;
+  counter-reset: item;
+  margin: 10px 0;
+}
+#popup-info-before-gotolink li {
+  counter-increment: item;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 45px;
+  font-family: "Helvetica", Sans-serif;
+}
+#popup-info-before-gotolink li:before {
+  margin-right: 10px;
+  content: counter(item) ".";
+ /* background: lightblue;*/
+  border-radius: 100%;
+  width: 1.2em;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  color: black;
+  font-weight: 800;
+  font-size: 36px;
+}
+
+.popup-info-before-gotolink-header-footer{
+  /*margin-bottom: 10px;*/
+  padding: 15px 0;
+
+}
+
+.generated_review_google_readonly{
+  background-color: #eaeaea;
+}
+
+
+
+#text-area-trigger-ai {
+  width: 100%;
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px #d8d8d899;
+  outline: none;
+  padding: 1%;
+  /*min-height: 5em;
+  overflow: auto;*/
+  overflow-y: hidden; /* prevents scroll bar flash */
+  resize: both;
+  min-height: 160px;
+
+  color: #262626;
+}
+
+#generated_review_google{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.google-textarea-show{
+  display: block;
+}
+
+#generated_review_google{
+  display: none;
+  padding: 15px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 8px #d8d8d899;
+  border-radius: 5px;
+}
+
+.rate {
+  /*float: left;*/
+  width: 100%;
+  /*height: 46px;*/
+  padding: 0 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 60px;
+  line-height: 64px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: "★";
+  text-shadow: 0px 1px 2px #00000063;
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+
+
+#all_fomr_button_container{
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1 0 auto;
+}
+
+
+
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0px 0px 8px #d8d8d899;
+  border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .rate:not(:checked) > label {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+

@@ -1,0 +1,21 @@
+{
+  "name": "mac/google-review-ai",
+  "description": "Generate Google Map business review text using AI.",
+  "type": "project",
+  "license": "GPL",
+  "authors": [
+    {
+      "name": "Md mamunuzzaman",
+      "email": "it.consulting.mamun@web.de"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "orhanerday/open-ai": "^5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Inc\\": "inc/"
+    }
+  }
+}
